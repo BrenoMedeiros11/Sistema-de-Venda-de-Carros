@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>tela_principal</class>
+ <widget class="QMainWindow" name="tela_principal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Venda de Carros - Tela Principal</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources/resources.qrc">
+    <normaloff>:/new/prefix1/car.png</normaloff>:/new/prefix1/car.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>251</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#groupBox {
+	border: 1px solid #000000;
+}</string>
+    </property>
+    <property name="title">
+     <string>Ações</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Dicas de uso da tabela:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>221</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Manipular dados de uma linha:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Clique &lt;span style=&quot; font-weight:600;&quot;&gt;duas vezes&lt;/span&gt; (mouse)&lt;/p&gt;&lt;p&gt;em qualquer valor de uma mesma linha,&lt;/p&gt;&lt;p&gt;e, em seguida, use o menu abaixo.&lt;/p&gt;&lt;p&gt;NOTA: Vendas do sistema &lt;span style=&quot; font-weight:600;&quot;&gt;não podem&lt;/span&gt; ser&lt;/p&gt;&lt;p&gt;editadas ou deletadas.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_choice">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>290</y>
+       <width>171</width>
+       <height>81</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_choice">
+     <property name="geometry">
+      <rect>
+       <x>16</x>
+       <y>260</y>
+       <width>201</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_choice_edit">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>380</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Editar</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_choice_delete">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>380</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Deletar</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_choice_view">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>410</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Visualizar</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTableView" name="tableView_Dados">
+    <property name="geometry">
+     <rect>
+      <x>285</x>
+      <y>20</y>
+      <width>491</width>
+      <height>511</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuIn_cio">
+    <property name="title">
+     <string>Início</string>
+    </property>
+    <widget class="QMenu" name="menuNovo_Cadastro">
+     <property name="title">
+      <string>Novo Cadastro</string>
+     </property>
+     <addaction name="actionCadastro_de_Usu_rios"/>
+     <addaction name="actionCadastro_de_Ve_culos"/>
+     <addaction name="actionNova_Venda"/>
+    </widget>
+    <addaction name="menuNovo_Cadastro"/>
+    <addaction name="actionAlterar_Senha"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuListagem">
+    <property name="title">
+     <string>Listagem</string>
+    </property>
+    <addaction name="actionLista_de_Usu_rios"/>
+    <addaction name="actionLista_de_Ve_culos"/>
+    <addaction name="actionLista_de_Vendas"/>
+   </widget>
+   <widget class="QMenu" name="menuVe_culos">
+    <property name="title">
+     <string>Veículos</string>
+    </property>
+    <addaction name="actionAdicionar_no_estoque"/>
+   </widget>
+   <addaction name="menuIn_cio"/>
+   <addaction name="menuListagem"/>
+   <addaction name="menuVe_culos"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="resources/resources.qrc">
+     <normaloff>:/new/prefix1/exit.gif</normaloff>
+     <normalon>:/new/prefix1/resources/exit.gif</normalon>:/new/prefix1/exit.gif</iconset>
+   </property>
+   <property name="text">
+    <string>Sair</string>
+   </property>
+   <property name="toolTip">
+    <string>Encerra o programa.</string>
+   </property>
+  </action>
+  <action name="actionCadastro_de_Usu_rios">
+   <property name="icon">
+    <iconset resource="resources/resources.qrc">
+     <normaloff>:/new/prefix1/user.gif</normaloff>:/new/prefix1/user.gif</iconset>
+   </property>
+   <property name="text">
+    <string>Cadastro de Usuários</string>
+   </property>
+   <property name="toolTip">
+    <string>Cadastra novos usuários.</string>
+   </property>
+  </action>
+  <action name="actionCadastro_de_Ve_culos">
+   <property name="icon">
+    <iconset resource="resources/resources.qrc">
+     <normaloff>:/new/prefix1/car.png</normaloff>:/new/prefix1/car.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cadastro de Veículos</string>
+   </property>
+   <property name="toolTip">
+    <string>Cadastra novos veículos.</string>
+   </property>
+  </action>
+  <action name="actionNova_Venda">
+   <property name="icon">
+    <iconset resource="resources/resources.qrc">
+     <normaloff>:/new/prefix1/sell.png</normaloff>:/new/prefix1/sell.png</iconset>
+   </property>
+   <property name="text">
+    <string>Nova Venda</string>
+   </property>
+   <property name="toolTip">
+    <string>Cadastra novas vendas.</string>
+   </property>
+  </action>
+  <action name="actionLista_de_Usu_rios">
+   <property name="icon">
+    <iconset resource="resources/resources.qrc">
+     <normaloff>:/new/prefix1/user.gif</normaloff>:/new/prefix1/user.gif</iconset>
+   </property>
+   <property name="text">
+    <string>Lista de Usuários</string>
+   </property>
+   <property name="toolTip">
+    <string>Lista os usuários cadastrados.</string>
+   </property>
+  </action>
+  <action name="actionLista_de_Ve_culos">
+   <property name="icon">
+    <iconset resource="resources/resources.qrc">
+     <normaloff>:/new/prefix1/car.png</normaloff>:/new/prefix1/car.png</iconset>
+   </property>
+   <property name="text">
+    <string>Lista de Veículos</string>
+   </property>
+   <property name="toolTip">
+    <string>Lista os veículos cadastrados.</string>
+   </property>
+  </action>
+  <action name="actionLista_de_Vendas">
+   <property name="icon">
+    <iconset resource="resources/resources.qrc">
+     <normaloff>:/new/prefix1/sell.png</normaloff>:/new/prefix1/sell.png</iconset>
+   </property>
+   <property name="text">
+    <string>Lista de Vendas</string>
+   </property>
+   <property name="toolTip">
+    <string>Lista as vendas cadastradas.</string>
+   </property>
+  </action>
+  <action name="actionAlterar_Senha">
+   <property name="icon">
+    <iconset resource="resources/resources.qrc">
+     <normaloff>:/new/prefix1/user_edit_password.gif</normaloff>:/new/prefix1/user_edit_password.gif</iconset>
+   </property>
+   <property name="text">
+    <string>Alterar Senha</string>
+   </property>
+   <property name="toolTip">
+    <string>Alterar a senha do usuário logado.</string>
+   </property>
+  </action>
+  <action name="actionAdicionar_no_estoque">
+   <property name="text">
+    <string>Adicionar no estoque</string>
+   </property>
+   <property name="toolTip">
+    <string>Adiciona uma quantidade ao veiculo cadastrado.</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

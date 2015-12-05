@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>view_vendas</class>
+ <widget class="QDialog" name="view_vendas">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>828</width>
+    <height>481</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Venda de Carros - Visualizar dados de vendas</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources/resources.qrc">
+    <normaloff>:/new/prefix1/sell.png</normaloff>:/new/prefix1/sell.png</iconset>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>811</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#groupBox {
+	border: 1px solid #000000;
+}</string>
+   </property>
+   <property name="title">
+    <string>Dados da Venda</string>
+   </property>
+   <widget class="QLabel" name="label_introducao_venda">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>10</y>
+      <width>761</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_introducao_venda {
+	text-align: center;
+	font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;introducao_venda&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_cliente_nome">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>381</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_cliente_nome {
+	border-top: 1px solid #000000;
+	border-left: 1px solid #000000;
+	border-top-left-radius: 5px;
+	background: #FFFFFF;
+
+	font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;cliente_nome&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_cliente_endereco">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>119</y>
+      <width>771</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_cliente_endereco {
+		border-left: 1px solid #000000;
+		border-right: 1px solid #000000;
+
+		background: #FFFFFF;
+
+		font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;cliente_endereco&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_cliente_telefone">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>80</y>
+      <width>391</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_cliente_telefone {
+		border-top: 1px solid #000000;
+		border-right: 1px solid #000000;
+		border-top-right-radius: 5px;
+		background: #FFFFFF;
+
+		font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;cliente_telefone&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_cliente_numero_cartao">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>180</y>
+      <width>381</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_cliente_numero_cartao {
+		border-left: 1px solid #000000;
+		border-bottom: 1px solid #000000;
+		border-bottom-left-radius: 5px;
+		background: #FFFFFF;
+
+		font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;cliente_numero_cartao&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_cliente_cpf">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>180</y>
+      <width>391</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_cliente_cpf {
+		border-right: 1px solid #000000;
+		border-bottom: 1px solid #000000;
+		border-bottom-right-radius: 5px;
+		background: #FFFFFF;
+
+		font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;cliente_cpf&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_cliente_rg">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>150</y>
+      <width>381</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_cliente_rg {
+		border-left: 1px solid #000000;
+		background: #FFFFFF;
+
+		font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;cliente_rg&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_cliente_idade">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>140</y>
+      <width>391</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_cliente_idade {
+		border-right: 1px solid #000000;
+		background: #FFFFFF;
+
+		font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;cliente_idade&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_vendedor">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>350</y>
+      <width>381</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_vendedor {
+		border-left: 1px solid #000000;
+		background: #FFFFFF;
+
+		font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;vendedor&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_veiculo_fabricante">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>250</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_veiculo_fabricante {
+		border-top: 1px solid #000000;
+		border-left: 1px solid #000000;
+		border-bottom: 1px solid #000000;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		background: #FFFFFF;
+
+		font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;veiculo_fabricante&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_veiculo_modelo">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>250</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_veiculo_modelo {
+		border-top: 1px solid #000000;
+		border-bottom: 1px solid #000000;
+		background: #FFFFFF;
+
+		font-weight: bold;
+		text-align: center;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;veiculo_modelo&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_veiculo_ano_fabricacao">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>250</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_veiculo_ano_fabricacao {
+		border-top: 1px solid #000000;
+		border-right: 1px solid #000000;
+		border-bottom: 1px solid #000000;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		background: #FFFFFF;
+
+		font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;veiculo_ano_fabricacao&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_preco_final">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>320</y>
+      <width>381</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_preco_final {
+		border-top: 1px solid #000000;
+		border-left: 1px solid #000000;
+		border-top-left-radius: 5px;
+		background: #FFFFFF;
+
+		font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;preco_final&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_forma_pagamento">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>320</y>
+      <width>391</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_forma_pagamento {
+		border-top: 1px solid #000000;
+		border-right: 1px solid #000000;
+		border-top-right-radius: 5px;
+		background: #FFFFFF;
+
+		font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;forma_pagamento&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_tipo_juros">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>350</y>
+      <width>391</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_tipo_juros {
+		border-right: 1px solid #000000;
+		background: #FFFFFF;
+
+		font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;tipo_juros&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_numero_parcelas">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>380</y>
+      <width>391</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_numero_parcelas {
+		border-right: 1px solid #000000;
+		background: #FFFFFF;
+
+		font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;numero_parcelas&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_prazo_primeira_parcela">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>410</y>
+      <width>281</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_prazo_primeira_parcela {
+		border-bottom: 1px solid #000000;
+		background: #FFFFFF;
+
+		font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;prazo_primeira_parcela&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_valor_parcela">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>410</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_valor_parcela {
+		border-left: 1px solid #000000;
+		border-bottom: 1px solid #000000;
+		border-bottom-left-radius: 5px;
+		background: #FFFFFF;
+
+		font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;valor_parcela&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_garantia">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>410</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_garantia {
+		border-right: 1px solid #000000;
+		border-bottom: 1px solid #000000;
+		border-bottom-right-radius: 5px;
+		background: #FFFFFF;
+
+		font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;garantia&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_introducao_dados_gerais">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>741</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Dados Gerais&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_introducao_dados_veiculo">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>210</y>
+      <width>771</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Dados do Veículo&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_introducao_outros_dados">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>280</y>
+      <width>771</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Outros dados da venda&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_porcent_juros">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>380</y>
+      <width>381</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_porcent_juros {
+		border-left: 1px solid #000000;
+		background: #FFFFFF;
+
+		font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;porcent_juros&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

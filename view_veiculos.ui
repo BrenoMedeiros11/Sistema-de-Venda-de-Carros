@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>view_veiculos</class>
+ <widget class="QDialog" name="view_veiculos">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>488</width>
+    <height>566</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Venda de Carros - Visualizar dados de veículos</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources/resources.qrc">
+    <normaloff>:/new/prefix1/car.png</normaloff>:/new/prefix1/car.png</iconset>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>451</width>
+     <height>541</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#groupBox {
+	border: 1px solid #000000;
+}</string>
+   </property>
+   <property name="title">
+    <string>Dados do Veículo</string>
+   </property>
+   <widget class="QLabel" name="label_placa">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>280</y>
+      <width>391</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_placa {
+	border-top: 1px solid #000000;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	background: #FFFFFF;
+
+	font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_chassi">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>310</y>
+      <width>391</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_chassi {
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	background: #FFFFFF;
+
+	font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_renavam">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>340</y>
+      <width>391</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_renavam {
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	background: #FFFFFF;
+
+	font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_fabricante">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>370</y>
+      <width>391</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_fabricante {
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	background: #FFFFFF;
+
+	font-weight: bold;	
+}</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_modelo">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>400</y>
+      <width>391</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_modelo {
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	background: #FFFFFF;
+
+	font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ano_fabricacao">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>430</y>
+      <width>391</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_ano_fabricacao {
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	background: #FFFFFF;
+
+	font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_quant_estoque">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>460</y>
+      <width>391</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_quant_estoque {
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	background: #FFFFFF;
+
+	font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_preco">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>490</y>
+      <width>391</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_preco {
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	background: #FFFFFF;
+
+	font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView_image">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>10</y>
+      <width>251</width>
+      <height>256</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>256</width>
+      <height>256</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

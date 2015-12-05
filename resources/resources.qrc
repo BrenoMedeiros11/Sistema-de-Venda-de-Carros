@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>exit.gif</file>
+        <file>user.gif</file>
+        <file>car.png</file>
+        <file>sell.png</file>
+        <file>user_edit_password.gif</file>
+    </qresource>
+    <qresource prefix="/initial_image">
+        <file alias="initial_image">car-seller-header.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditTableViewVeiculos</class>
+ <widget class="QDialog" name="EditTableViewVeiculos">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>664</width>
+    <height>446</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Venda de Carros - Editar dados de veículo</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources/resources.qrc">
+    <normaloff>:/new/prefix1/car.png</normaloff>:/new/prefix1/car.png</iconset>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>641</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Editar dados do veículo</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>621</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Abaixo segue os dados do veículo que deseja editar:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_edit">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>380</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Salvar</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_chassi">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>190</y>
+      <width>261</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_renavam">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>230</y>
+      <width>261</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_ano_fabricacao">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>270</y>
+      <width>181</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_fabricacao">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>270</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Ano de fabricação: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_renavam">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Renavam: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_chassi">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>190</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Chassi: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_modelo">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_modelo {
+		border: 1px solid #000000;
+
+		background: #FFFFFF;
+
+		font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_fabricante">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_fabricante {
+		border-top: 1px solid #000000;
+		border-left: 1px solid #000000;
+		border-right: 1px solid #000000;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+
+		background: #FFFFFF;
+
+		font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_preco">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>139</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_preco {
+		border-left: 1px solid #000000;
+		border-right: 1px solid #000000;
+		border-bottom: 1px solid #000000;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+
+		background: #FFFFFF;
+
+		font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView_image">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>100</y>
+      <width>256</width>
+      <height>192</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>256</width>
+      <height>256</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_new_image">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>310</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nova Foto</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>386</x>
+      <y>70</y>
+      <width>231</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Foto Selecionada: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
