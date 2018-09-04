@@ -1,5 +1,5 @@
 # UFRN - Paradigmas de Programação (DCA0201) - Turma 01 (2015.2)
-Aluno: Bruno Teonácio dos Santos
+Aluno: Bruno Teonácio dos Santos<br>
 Projeto: Sistema de Venda de Carros
 
 # Resumo
